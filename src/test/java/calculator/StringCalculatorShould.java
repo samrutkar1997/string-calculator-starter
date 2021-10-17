@@ -21,7 +21,8 @@ class StringCalculatorShould {
     @Test													
     void string_with_two_or_more_numbers_should_return_sum_as_int() {
         StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(3, stringCalculator.add("1,2"),"Testing for two numbers");  
+        assertEquals(3, stringCalculator.add("1,2"),"Testing for two numbers");
+        assertEquals(12, stringCalculator.add("1,2,5,4"),"Testing for more than one numbers"); 
        
     }
 }

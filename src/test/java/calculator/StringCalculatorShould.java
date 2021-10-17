@@ -25,4 +25,9 @@ class StringCalculatorShould {
         assertEquals(12, stringCalculator.add("1,2,5,4"),"Testing for more than one numbers"); 
        
     }
+    @Test														
+    void string_with_delimiters_should_return_sum_as_int() {
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(6, stringCalculator.add("1\n2,3"),"Testing fornew line entry of number");  
+    }
 }

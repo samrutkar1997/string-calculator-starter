@@ -5,7 +5,12 @@ class StringCalculator {
     public int add(String input) {
     	if(input.length()==0)
         return 0;
-        return Integer.valueOf(input);//step 2
+    	String [] arr =input.split(",");
+    	int sum =0 ;
+    	for(String i :arr) {
+    		sum += Integer.valueOf(i) ;
+    	}
+    	return sum ;
     }
 
 }

@@ -18,4 +18,10 @@ class StringCalculatorShould {
         assertEquals(1, stringCalculator.add("1"));
         assertEquals(2, stringCalculator.add("2"),"Testing for diff single number");
     }
+    @Test													
+    void string_with_two_or_more_numbers_should_return_sum_as_int() {
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(3, stringCalculator.add("1,2"),"Testing for two numbers");  
+       
+    }
 }
